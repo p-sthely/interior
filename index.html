@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="./assets/fontawesome-free-6.3.0-web/css/fontawesome.css">
   <link rel="stylesheet" href="./assets/fontawesome-free-6.3.0-web/css/solid.css">
+  <script src="script.js"></script>
 </head>
 
 <body>
@@ -16,21 +17,35 @@
     <div class="navbar container">
       <div class="container-inner">
         <ul class="navbar__nav">
-          <li class="navbar__nav__link">Home</li>
-          <li class="navbar__nav__link">Shop</li>
-          <li class="navbar__nav__link">About Us</li>
-          <li class="navbar__nav__link">Contact</li>
+          <li class="navbar__nav__link"><a href="#">Home</a></li>
+          <li class="navbar__nav__link"><a href="#">Shop</a></li>
+          <li class="navbar__nav__link"><a href="#">About Us</a></li>
+          <li class="navbar__nav__link"><a href="#">Contact</a></li>
         </ul>
         <div class="navbar__bag-shopping">
-          <i class="fa-solid fa-bag-shopping"></i>
+          <i class="fa-solid fa-bag-shopping fa-2xl"></i>
           <div class="navbar__bag-shopping__count">
             1
           </div>
         </div>
-        <div class="navbar__menu-toggler">
+        <div class="navbar__menu-toggler" onclick="toggleMenu(document.querySelector('.navbar__menu'));">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
           </svg>
+        </div>
+        <div class="navbar__menu">
+          <ul class="navbar__menu__nav">
+            <li class="navbar__menu__nav__link"><a href="#">Home</a></li>
+            <li class="navbar__menu__nav__link"><a href="#">Shop</a></li>
+            <li class="navbar__menu__nav__link"><a href="#">About Us</a></li>
+            <li class="navbar__menu__nav__link"><a href="#">Contact</a></li>
+          </ul>
+          <div class="navbar__menu__bag-shopping">
+            <i class="fa-solid fa-bag-shopping fa-2xl"></i>
+            <div class="navbar__menu__bag-shopping__count">
+              1
+            </div>
+          </div>
         </div>
       </div>
     </div>

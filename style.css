@@ -471,11 +471,44 @@
  */
 
 .features {
-  
+  display: flex;
+  justify-content: center;
 }
 
 .features__item {
-  
+  margin-bottom: 64px;
+}
+
+.features__item__content {
+  display: flex;
+  justify-content: center;
+  gap: 20.53px;
+}
+
+.features__item__content div {
+  flex-grow: 1;
+}
+
+.features__item__icon {
+  width: 71.85px;
+  height: 71.85px;
+}
+
+@media screen and (min-width: 992px) {
+  .features .container-inner {
+    display: flex;
+    gap: 36px;
+    width: 100%;
+  }
+
+  .features__item {
+    flex: 1;
+    margin-bottom: 0;
+  }
+
+  .features__item__content div {
+    flex-grow: 0;
+  }
 }
 
 /*  .products block
